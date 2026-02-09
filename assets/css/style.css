@@ -1,0 +1,324 @@
+/* =====================
+   GLOBAL RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff4f7;
+  color: #1f1f1f;
+  line-height: 1.6;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #6b2d40;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #c65b7c;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+}
+
+/* =====================
+   PAGE WRAPPER
+===================== */
+.page {
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #6b2d40;
+}
+
+/* =====================
+   HOME
+===================== */
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  padding: 5rem 6rem;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  margin-top: 1rem;
+  color: #6f6f6f;
+  max-width: 420px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.author-day {
+  margin: 2rem 6rem;
+  padding: 2rem;
+  background: #fde2e8;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.newsletter {
+  margin: 4rem auto;
+  padding: 2.5rem;
+  max-width: 420px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* =====================
+   GLASS CARD
+===================== */
+.glass-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  max-width: 420px;
+  margin: auto;
+}
+
+/* =====================
+   INPUTS & BUTTONS
+===================== */
+input, textarea, select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  padding: 0.7rem 1.2rem;
+  background: #c65b7c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6b2d40;
+}
+
+.button-row {
+  display: flex;
+  gap: 1rem;
+}
+
+/* =====================
+   BOOK EXPLORER
+===================== */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin: 0.6rem 0 0.2rem;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.8rem;
+}
+
+/* =====================
+   TRACKER
+===================== */
+.tracker-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.tracker-grid input:nth-child(3),
+.tracker-grid button {
+  grid-column: span 2;
+}
+
+#trackerResult {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #6b2d40;
+}
+
+.progress-bar {
+  margin-top: 1.5rem;
+  height: 16px;
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#progressFill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #c65b7c, #6b2d40);
+  transition: width 0.6s ease;
+}
+
+/* =====================
+   FLOW
+===================== */
+.flow-input {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+#completedList {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+/* =====================
+   FEEDBACK
+===================== */
+.feedback-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.feedback-grid textarea,
+.feedback-grid button {
+  grid-column: span 2;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #6f6f6f;
+}
+
+/* =====================
+   MOBILE
+===================== */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .hero-image img {
+    margin: auto;
+  }
+
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .tracker-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tracker-grid input,
+  .tracker-grid button {
+    grid-column: span 1;
+  }
+
+  .button-row {
+    flex-direction: column;
+  }
+}

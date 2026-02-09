@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readify | Reading Flow</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Readify</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explorer.html">Explorer</a></li>
+      <li><a href="tracker.html">Tracker</a></li>
+      <li><a href="recommender.html">Recommender</a></li>
+      <li><a href="flow.html">Reading Flow</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <button class="hamburger">&#9776;</button>
+  </nav>
+</header>
+
+<main class="page">
+  <h1>Reading Flow</h1>
+
+  <div class="glass-card flow-card">
+    <div class="button-row">
+      <button id="playSound">Play Sound</button>
+      <button id="stopSound">Stop Sound</button>
+    </div>
+
+    <div class="flow-input">
+      <input id="completedBook" placeholder="Completed book">
+      <button id="addBook">Add</button>
+    </div>
+
+    <ul id="completedList"></ul>
+  </div>
+</main>
+
+
+
+<footer>
+  <p>© 2025 Readify</p>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/flow.js"></script>
+</body>
+</html>

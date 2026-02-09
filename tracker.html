@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readify | Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Readify</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explorer.html">Explorer</a></li>
+      <li><a href="tracker.html">Tracker</a></li>
+      <li><a href="recommender.html">Recommender</a></li>
+      <li><a href="flow.html">Reading Flow</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <button class="hamburger">&#9776;</button>
+  </nav>
+</header>
+
+<main class="page">
+  <h1>Reading Tracker</h1>
+
+  <div class="glass-card tracker-card">
+    <form id="trackerForm" class="tracker-grid">
+      <input id="totalPages" type="number" placeholder="Total pages" required>
+      <input id="pagesRead" type="number" placeholder="Pages read" required>
+      <input id="speed" type="number" placeholder="Pages/day" required>
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div class="progress-bar">
+      <div id="progressFill"></div>
+    </div>
+
+    <p id="trackerResult"></p>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Readify</p>
+</footer>
+
+<script src="js/tracker.js"></script>
+</body>
+</html>

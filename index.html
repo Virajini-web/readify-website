@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readify | Home</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Readify</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explorer.html">Explorer</a></li>
+      <li><a href="tracker.html">Tracker</a></li>
+      <li><a href="recommender.html">Recommender</a></li>
+      <li><a href="flow.html">Reading Flow</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+    <button class="hamburger">&#9776;</button>
+  </nav>
+</header>
+
+<main class="home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 id="quote">Discover the Books you were looking for</h1>
+      <p>Readify helps you explore, track, and enjoy books with ease.</p>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/hero.jpg" alt="Person reading books">
+    </div>
+  </section>
+
+  <!-- AUTHOR OF THE DAY -->
+  <section class="author-day">
+    <h2>Author of the Day</h2>
+    <p id="authorName">Loading...</p>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <h2>Join our Newsletter</h2>
+    <input type="email" id="newsletterEmail" placeholder="Enter your email">
+    <button id="subscribeBtn">Subscribe</button>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 Readify. All rights reserved.</p>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readify | Recommender</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Readify</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explorer.html">Explorer</a></li>
+      <li><a href="tracker.html">Tracker</a></li>
+      <li><a href="recommender.html">Recommender</a></li>
+      <li><a href="flow.html">Reading Flow</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <button class="hamburger">&#9776;</button>
+  </nav>
+</header>
+
+<main class="page">
+  <h1>Book Recommender</h1>
+
+  <div class="glass-card">
+
+    <select id="genreSelect">
+      <option value="all">All Genres</option>
+      <option value="fiction">Fiction</option>
+      <option value="fantasy">Fantasy</option>
+      <option value="scifi">Sci-Fi</option>
+    </select>
+
+    <select id="lengthSelect">
+      <option value="all">Any Length</option>
+      <option value="short">Short</option>
+      <option value="medium">Medium</option>
+      <option value="long">Long</option>
+    </select>
+
+    <div class="button-row">
+        <button id="recommendBtn">Recommend Book</button>
+        <button id="againBtn">Pick Again</button>
+    </div>
+
+    <div id="recommendationCard"></div>
+
+  </div>
+  
+</main>
+
+
+
+<footer>
+  <p>© 2025 Readify</p>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/recommender.js"></script>
+</body>
+</html>
